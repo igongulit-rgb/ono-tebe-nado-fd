@@ -8,7 +8,8 @@ body {
 header {
   display: grid;
   grid-template-columns: 50px 391.4786376953125px 36.52px 148px 184px 240px 50px;
-  grid-template-rows: 92px 41px 36.52px 42px 96px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   color: #000000;
   font-size: 18px;
   line-height: 100%;
@@ -18,7 +19,6 @@ header {
 .header-menu {
   place-content: center;
   grid-column: 2/3;
-  grid-row: 3/4;
   padding-top: 12px;
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
@@ -40,26 +40,26 @@ header {
 
 .logo-black {
   grid-column: 4/5;
-  grid-row: 2/5;
   box-sizing: border-box;
-  width: 140px;
-  height: 106px;
-  padding-top: 10px;
+  width: 138px;
+  height: 104px;
+  padding-left: 5px;
+  padding-top: 4px;
 }
 
 .header-address {
-  font-style: normal;
+  grid-column: 6/7;
+}
+.address-style{
   display: flex;
   flex-direction: column;
   place-content: center;
-  grid-column: 6/7;
-  grid-row: 2/5;
   justify-content: space-evenly;
   align-items: flex-start;
   width: 240px;
-  height: 98px;
-  margin-top: 15px;
+  font-style: normal;
 }
+
 
 .header-address a {
   text-decoration: underline;
@@ -72,8 +72,8 @@ header {
 .cover {
   position: relative;
   width: 1100px;
-  height: 757px;
-  padding: 50px;
+  min-height: 757px;
+  padding: 50px 50px 50px 50px;
   background-image:
     linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.6)),
     url(../images/cover.jpg);
@@ -83,9 +83,9 @@ header {
 }
 
 .title {
-  padding: 115px 0px 106px 0px;
+  padding: 115px 0px 108px 0px;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 100px;
   font-style: Bold;
@@ -106,8 +106,9 @@ header {
 
 .text-right {
   display: block;
-  padding-left: 615px;
-  text-align: right;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: -30px;
 }
 
 .description {
@@ -151,9 +152,9 @@ header {
 }
 
 /*------------------------------------------------------------*/
-h2 {
+.lots-title {
   margin-left: 40px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 40px;
   font-style: Bold;
@@ -182,13 +183,16 @@ h2 {
   justify-content: space-between;
   box-sizing: border-box;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   padding: 48px 40px;
   color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card-title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 22px;
   font-style: Bold;
@@ -200,7 +204,7 @@ h2 {
 }
 
 .card-text {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: normal;
   font-weight: 400;
   font-size: 20px;
@@ -208,31 +212,22 @@ h2 {
   letter-spacing: 0%;
 }
 
-.card-lot-01 {
+.card-lot-right {
   background-image:
     linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.6)),
     url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
-.card-lot-02 {
+.card-lot-center {
   background-image:
     linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.6)),
     url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
-.card-lot-03 {
+.card-lot-left {
   background-image:
     linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.6)),
     url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .watch-more {
@@ -248,14 +243,13 @@ h2 {
 .about {
   display: grid;
   grid-template-columns: 47px 240px 72px 291px 402px;
-  grid-template-rows: 35px 98px 47px 92px 8px 120px 24px 168px;
-  padding-left: 22px;
+  padding-left: 24px;
+  padding-top: 36px;
 }
 
 .logo-border-black {
   display: flex;
   grid-column: 2 / 4;
-  grid-row: 2 / 4;
   justify-content: center;
   align-items: center;
   width: 240px;
@@ -269,12 +263,11 @@ h2 {
   height: 114px;
 }
 
-h3 {
+.about-title {
   place-content: center center;
   grid-column: 4 / 5;
-  grid-row: 3 / 4;
   padding-top: 6px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 40px;
   font-style: Bold;
@@ -285,20 +278,19 @@ h3 {
 
 .p-top {
   grid-column: 4 / 6;
-  grid-row: 6 / 7;
-  padding-top: 5px;
-  font-family: Raleway;
+  padding-top: 9px;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
+  padding-bottom: 20px;
 }
 
 .p-bottom {
   grid-column: 4 / 6;
-  grid-row: 8 / 9;
   padding-top: 5px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -309,19 +301,24 @@ h3 {
 footer {
   display: grid;
   grid-template-columns: 50px 264.573486328125px 154.03px 163.89999389648438px 177.5px 240px 50px;
-  height: 180px;
-  margin-top: 180px;
+  margin-top: 175px;
   font-size: 18px;
   line-height: 100%;
 }
 
-.footer-address {
-  font-style: normal;
+.footer-address { 
+  grid-column: 2/3;
+  gap: 8px;
+  padding-top: 7px;
+}
+.address-style{
   display: flex;
   flex-direction: column;
-  grid-column: 2/3;
-  gap: 7px;
-  padding-top: 8px;
+  place-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 240px;
+  font-style: normal;
 }
 
 .footer-address a {
@@ -357,4 +354,5 @@ footer {
   height: 48px;
   padding-top: 3px;
 }
+
 
