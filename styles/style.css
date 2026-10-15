@@ -8,8 +8,8 @@ body {
 header {
   display: grid;
   grid-template-columns: 50px 391.4786376953125px 36.52px 148px 184px 240px 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 92px;
+  padding-bottom: 96px;
   color: #000000;
   font-size: 18px;
   line-height: 100%;
@@ -19,7 +19,6 @@ header {
 .header-menu {
   place-content: center;
   grid-column: 2/3;
-  padding-top: 12px;
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
   text-underline-offset: 4px;
@@ -50,7 +49,8 @@ header {
 .header-address {
   grid-column: 6/7;
 }
-.address-style{
+
+.address-style {
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -212,19 +212,19 @@ header {
   letter-spacing: 0%;
 }
 
-.card-lot-right {
+.card-lot-film {
   background-image:
     linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.6)),
     url(../images/card-lot-01.jpg);
 }
 
-.card-lot-center {
+.card-lot-book {
   background-image:
     linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.6)),
     url(../images/card-lot-02.jpg);
 }
 
-.card-lot-left {
+.card-lot-picture {
   background-image:
     linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.6)),
     url(../images/card-lot-03.jpg);
@@ -264,6 +264,7 @@ header {
 }
 
 .about-title {
+  /*В моём макете этот элемент размещён в одну строку, специально перепроверял макет на сайте через pixel-perfect, возможно мы обладаем*/
   place-content: center center;
   grid-column: 4 / 5;
   padding-top: 6px;
@@ -296,6 +297,7 @@ header {
   line-height: 24px;
   letter-spacing: 0%;
 }
+
 /*-----------------------------------------------*/
 
 footer {
@@ -304,14 +306,16 @@ footer {
   margin-top: 175px;
   font-size: 18px;
   line-height: 100%;
+  padding-bottom: 82px;
 }
 
-.footer-address { 
+.footer-address {
   grid-column: 2/3;
   gap: 8px;
   padding-top: 7px;
 }
-.address-style{
+
+.address-style {
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -351,8 +355,5 @@ footer {
   grid-column: 6/7;
   justify-content: space-between;
   width: 240px;
-  height: 48px;
   padding-top: 3px;
 }
-
-
