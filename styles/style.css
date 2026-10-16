@@ -42,8 +42,8 @@ header {
   box-sizing: border-box;
   width: 138px;
   height: 104px;
-  padding-left: 5px;
   padding-top: 4px;
+  padding-left: 5px;
 }
 
 .header-address {
@@ -107,8 +107,8 @@ header {
 .text-right {
   display: block;
   width: fit-content;
-  margin-left: auto;
   margin-right: -30px;
+  margin-left: auto;
 }
 
 .description {
@@ -172,10 +172,10 @@ header {
 }
 
 .card-menu {
-  list-style: none;
   display: grid;
   grid-template-columns: 334px 334px 334px;
   gap: 24px;
+  list-style: none;
 }
 
 .card {
@@ -244,8 +244,8 @@ header {
 .about {
   display: grid;
   grid-template-columns: 47px 240px 72px 291px 402px;
-  padding-left: 24px;
   padding-top: 36px;
+  padding-left: 24px;
 }
 
 .logo-border-black {
@@ -282,12 +282,12 @@ header {
 .p-top {
   grid-column: 4 / 6;
   padding-top: 9px;
+  padding-bottom: 20px;
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
-  padding-bottom: 20px;
 }
 
 .p-bottom {
@@ -306,9 +306,9 @@ footer {
   display: grid;
   grid-template-columns: 50px 264.573486328125px 154.03px 163.89999389648438px 177.5px 240px 50px;
   margin-top: 175px;
+  padding-bottom: 82px;
   font-size: 18px;
   line-height: 100%;
-  padding-bottom: 82px;
 }
 
 .footer-address {
