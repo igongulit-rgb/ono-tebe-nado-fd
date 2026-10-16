@@ -172,6 +172,7 @@ header {
 }
 
 .card-menu {
+  list-style: none;
   display: grid;
   grid-template-columns: 334px 334px 334px;
   gap: 24px;
@@ -264,9 +265,9 @@ header {
 }
 
 .about-title {
-  /*В моём макете этот элемент размещён в одну строку, специально перепроверял макет на сайте через pixel-perfect, возможно мы обладаем*/
   place-content: center center;
-  grid-column: 4 / 5;
+  grid-column: 4 / 6;
+  align-self: center start;
   padding-top: 6px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -275,6 +276,7 @@ header {
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .p-top {
